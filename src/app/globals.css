@@ -2,14 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-.body {
-    transition: background-color 0.3s ease;
+
+:root {
+    --foreground-light: 0, 0, 0;
+    --background-start-light: 214, 219, 220;
+    --background-end-light: 255, 255, 255;
+  
+    --foreground-dark: 255, 255, 255;
+    --background-start-dark: 0, 0, 0;
+    --background-end-dark: 0, 0, 0;
   }
   
-  .light-mode .body {
-    background-color: white;
+  body {
+    color: rgb(var(--foreground-light));
+    background: linear-gradient(to bottom, rgb(var(--background-start-light)), rgb(var(--background-end-light)));
+    transition: color 0.3s, background 0.3s;
   }
   
-  .dark-mode .body {
-    background-color: black;
+  body.dark-mode {
+    color: rgb(var(--foreground-dark));
+    background: linear-gradient(to bottom, rgb(var(--background-start-dark)), rgb(var(--background-end-dark)));
   }
