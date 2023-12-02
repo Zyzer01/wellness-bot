@@ -1,9 +1,9 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { Crawler, Page } from "crawler";
+import { Crawler, Page } from "../../crawler";
 import { Document } from "langchain/document";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { SupabaseVectorStore } from "langchain/vectorstores/supabase";
-import { supabaseAdminClient } from "utils/supabaseAdmin";
+import { supabaseAdminClient } from "../../utils/supabaseAdmin";
 import { TokenTextSplitter } from "langchain/text_splitter";
 import { summarizeLongDocument } from "./summarizer";
 

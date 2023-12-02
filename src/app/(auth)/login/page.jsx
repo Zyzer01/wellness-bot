@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import Head from "next/head"
 import { HiOutlineLightBulb } from "react-icons/hi2";
 
 export default function Chat() {

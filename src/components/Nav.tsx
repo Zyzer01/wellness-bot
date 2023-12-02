@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import ThemeToggle from './ThemeToggle'
 
-const Navbar = () => {
+export default function Navbar() {
   return (
     <header className="h-15 w-full dark:bg-black shadow-sm dark:border-gray-700">
     <div className="container  px-4 sm:px-6 py-4 flex justify-between items-center">
@@ -20,4 +20,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+ Navbar

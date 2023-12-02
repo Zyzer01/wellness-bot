@@ -1,4 +1,4 @@
-import { supabaseAdminClient } from "utils/supabaseAdmin";
+import { supabaseAdminClient } from "../../utils/supabaseAdmin";
 
 class ConversationLog {
   constructor(public userId: string) {

@@ -1,9 +1,9 @@
-import Nav from '@/components/Nav';
+import Navbar from "../../components/Nav";
 
 export default function FullLayout({ children }) {
   return (
     <>
-      <Nav />
+      <Navbar />
       {children}
     </>
   );
