@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import ChatPanel from "../../../components/ChatPanel";
 import ThemeToggle from "../../../components/ThemeToggle";
@@ -7,7 +8,7 @@ export default function Chat() {
   return (
     <div className="">
   <div className="grid grid-cols-5">
-    <div className="col-span-1 p-4 dark:bg-black bg-gray-500">
+    <div className="col-span-1 p-4 dark:bg-black bg-gray-300">
       <div className="grid grid-rows-2 h-full">
         <div className="row-span-1 dark:text-white">
           <h1 className="text-xl">Wellness AI</h1>
