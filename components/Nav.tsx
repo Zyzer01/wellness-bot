@@ -15,7 +15,7 @@ export default function Navbar() {
         </h2>
         <div className="flex items-center space-x-2">
           {/* Add ThemeToggle component here */}
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
         </div>
       </div>
     </header>
