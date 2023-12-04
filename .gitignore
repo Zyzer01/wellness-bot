@@ -30,7 +30,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
-.env*.example
+.env.example
 # dotenv environment variables file
 .env
 
