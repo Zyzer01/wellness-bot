@@ -10,7 +10,7 @@ export default function Home() {
      <Head>
         <title>wellnesAI | Your health partner</title>
         <meta
-          name="description"
+          name="description" 
           content="Your personalized well-being companion for a healthier life"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
