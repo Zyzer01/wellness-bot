@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes"
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const { setTheme } = useTheme()
@@ -15,9 +16,9 @@ export default function Navbar() {
         </h2>
         <div className="flex items-center space-x-2">
           {/* Add ThemeToggle component here */}
-          {/* <ThemeToggle /> */}
-          <button onClick={() => setTheme("light")}>Light</button>
-      <button onClick={() => setTheme("dark")}>Dark</button>
+          <ThemeToggle />
+          {/* <button onClick={() => setTheme("light")}>Light</button>
+      <button onClick={() => setTheme("dark")}>Dark</button> */}
         </div>
       </div>
     </header>
