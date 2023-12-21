@@ -15,7 +15,7 @@ const ThemeToggle = () => {
       ) : (
         <HiOutlineMoon className="h-6 w-6" />
       )}
-      {/* <span>{theme === 'light' ? 'Light Mode' : 'Dark Mode'}</span> */}
+      <span>{theme === 'light' ? 'Light Mode' : 'Dark Mode'}</span>
     </button>
   );
 };
