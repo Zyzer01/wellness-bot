@@ -1,13 +1,13 @@
+'use client'
 import React from "react";
 import Link from "next/link";
-import ThemeToggle from "./ThemeToggle";
-import { useTheme } from '../context/ThemeContext';
+import { useTheme } from "next-themes"
 
 export default function Navbar() {
-  const { theme } = useTheme();
+  const { setTheme } = useTheme()
   return (
-    <div style={{ color: theme === 'light' ? 'black' : 'white' }}>
-    <header className="h-15 w-full shadow-sm dark:border-gray-700 ">
+    <div>    
+    <header className="h-15 w-full shadow-sm dark:border-gray-700">
       <div className="container px-4 sm:px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <h2 className="font-bold text-3xl dark:text-dark">
@@ -16,6 +16,8 @@ export default function Navbar() {
         <div className="flex items-center space-x-2">
           {/* Add ThemeToggle component here */}
           {/* <ThemeToggle /> */}
+          <button onClick={() => setTheme("light")}>Light</button>
+      <button onClick={() => setTheme("dark")}>Dark</button>
         </div>
       </div>
     </header>
