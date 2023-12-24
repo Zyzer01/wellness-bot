@@ -9,7 +9,7 @@ export const ThemeProvider = ({ children }) => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light')); 
   };
 
-  useEffect(() => {
+  useEffect(() => { 
     document.documentElement.classList.remove('light', 'dark');
     document.documentElement.classList.add(theme); 
   }, [theme]);
