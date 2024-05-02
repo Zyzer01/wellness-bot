@@ -16,7 +16,7 @@ export default function Chat() {
 
         <div className="py-8 w-full flex items-center justify-center space-x-6">
           <div className="opacity-75 transition hover:opacity-100">
-              <p className="text-base mr-2">© Copyright 2023 wellnessAI</p>
+              <p className="text-base mr-2">Built with ❤️ by <span><a href="https://github.com/zyzer01">David Fola</a></span></p>
           </div>
           <div className="border-l border-gray-300 w-1 h-4" />
           <div className="flex items-center justify-center space-x-2">
